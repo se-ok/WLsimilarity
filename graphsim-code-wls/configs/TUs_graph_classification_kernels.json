@@ -1,0 +1,157 @@
+{
+    "GraphSage" : {
+        "1" : {
+            "residual" : false
+        },
+        "2" : {
+            "residual" : true
+        }
+    },
+
+    "GAT" : {
+        "1" : {
+            "residual" : false,
+            "temperature" : 1.0
+        },
+        "2" : {
+            "residual" : false,
+            "temperature" : 10.0
+        },
+        "3" : {
+            "residual" : false,
+            "temperature" : 100.0
+        },
+        "4" : {
+            "residual" : true,
+            "temperature" : 1.0
+        },
+        "5" : {
+            "residual" : true,
+            "temperature" : 10.0
+        },
+        "6" : {
+            "residual" : true,
+            "temperature" : 100.0
+        }
+    },
+
+    "GCN" : {
+        "1" : {
+            "residual" : false
+        },
+        "2" : {
+            "residual" : true
+        }
+    },
+
+    "WWL" : {
+        "1" : {            
+        }
+    },
+
+    "WLSLin" : {
+        "1" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "linear",
+            "kernel_params" : {
+            },
+            "binary" : false,
+            "cat_scale" : 1.0,
+            "cuda" : true    
+        },
+        "2" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "linear",
+            "kernel_params" : {
+            },
+            "binary" : false,
+            "cat_scale" : 0.0,
+            "cuda" : true    
+        }
+    },
+
+    "WLS" : {
+        "1" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 0.1
+            },
+            "binary" : false,
+            "cat_scale" : 1.0,
+            "cuda" : true    
+        },
+        "2" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 1.0
+            },
+            "binary" : false,
+            "cat_scale" : 1.0,
+            "cuda" : true    
+        },
+        "3" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 10
+            },
+            "binary" : false,
+            "cat_scale" : 1.0,
+            "cuda" : true    
+        },
+        "4" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 0.1
+            },
+            "binary" : false,
+            "cat_scale" : 0.0,
+            "cuda" : true    
+        },
+        "5" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 1.0
+            },
+            "binary" : false,
+            "cat_scale" : 0.0,
+            "cuda" : true    
+        },
+        "6" : {
+            "hidden_dim" : 200,
+            "out_dim" : 200,
+            
+            "kernel_name" : "rbf",
+            "kernel_params" : {
+                "order" : 2,
+                "sigma" : 10
+            },
+            "binary" : false,
+            "cat_scale" : 0.0,
+            "cuda" : true    
+        }
+    }
+}

@@ -1,0 +1,149 @@
+{
+    "GatedGCN" : {
+        "1" : {
+            "L": 4,
+            "hidden_dim": 70,
+            "out_dim": 70,
+            "residual": true,
+            "edge_feat": false,
+            "readout": "mean",
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true
+        }
+    },
+
+    "GAT" : {
+        "1" : {
+            "L": 4,
+            "n_heads": 8,
+            "hidden_dim": 19,
+            "out_dim": 152,
+            "residual": true,
+            "readout": "mean",
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true,
+            "self_loop": false
+        }
+    },
+
+    "GCN" : {
+        "1" : {
+            "L": 4,
+            "hidden_dim": 146,
+            "out_dim": 146,
+            "residual": true,
+            "readout": "mean",
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true,
+            "self_loop": false
+        }
+    },
+
+    "GIN" : {
+        "1" : {
+            "L": 4,
+            "hidden_dim": 110,
+            "residual": true,
+            "readout": "sum",
+            "n_mlp_GIN": 2,
+            "learn_eps_GIN": true,
+            "neighbor_aggr_GIN": "sum",
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true
+        }
+    },
+
+    "GraphSage" : {
+        "1" : {
+            "L": 4,
+            "hidden_dim": 106,
+            "out_dim": 106,
+            "residual": true,
+            "readout": "mean",
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true,
+            "sage_aggregator": "meanpool"
+        }
+    },
+
+    "MLP" : {
+        "1": {
+            "L": 4,
+            "hidden_dim": 150,
+            "out_dim": 150,
+            "readout": "mean",
+            "gated": false,
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0
+        }
+    },
+
+    "MoNet" : {
+        "1": {
+            "L": 4,
+            "hidden_dim": 90,
+            "out_dim": 90,
+            "residual": true,
+            "readout": "mean",
+            "kernel": 3,
+            "pseudo_dim_MoNet": 2,
+            "in_feat_dropout": 0.0,
+            "dropout": 0.0,
+            "graph_norm": true,
+            "batch_norm": true
+        }
+    },
+
+    "WLS" : {
+        "1" : {
+            "n_iter" : 4,
+            "embed_dim" : 50,
+            "hidden_dim" : 50,
+            "out_dim" : 50,
+            "n_mlp_layer" : 3,
+            "scale_mlp" : 2,
+            "dropout" : 0.0,
+            "residual" : false
+        },
+        "2" : {
+            "n_iter" : 4,
+            "embed_dim" : 50,
+            "hidden_dim" : 50,
+            "out_dim" : 50,
+            "n_mlp_layer" : 3,
+            "scale_mlp" : 2,
+            "dropout" : 0.1,
+            "residual" : false
+        },
+        "3" : {
+            "n_iter" : 4,
+            "embed_dim" : 50,
+            "hidden_dim" : 50,
+            "out_dim" : 50,
+            "n_mlp_layer" : 3,
+            "scale_mlp" : 2,
+            "dropout" : 0.0,
+            "residual" : true
+        },
+        "4" : {
+            "n_iter" : 4,
+            "embed_dim" : 50,
+            "hidden_dim" : 50,
+            "out_dim" : 50,
+            "n_mlp_layer" : 3,
+            "scale_mlp" : 2,
+            "dropout" : 0.1,
+            "residual" : true
+        }
+    }
+}
