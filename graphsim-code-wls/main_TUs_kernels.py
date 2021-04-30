@@ -181,7 +181,7 @@ time_embedding /= len(net_params)
 time_wdist /= len(net_params)
 time_svc /= len(net_params)
 
-_normalizer = 'unit' if args.unit else 'normal'
+_normalizer = 'normal'
 
 with open(log_filename, 'a') as of:
     log_test = '\t'.join([
